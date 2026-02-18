@@ -493,7 +493,7 @@ Feel free to:
 
 
 
-<!-- 
+
 # 🌍 Travelling Website
 
 > A modern, responsive travel exploration platform built with Next.js, React, and TypeScript. Discover amazing destinations and plan your next adventure!
@@ -739,4 +739,3 @@ If you have questions or need help, feel free to open an issue or reach out!
 
 **Happy Travelling! 🌴✈️**
 
- -->
