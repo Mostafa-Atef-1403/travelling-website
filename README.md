@@ -1,4 +1,4 @@
-# �️ Trip. - Adventure Travel Platform
+# Trip. - Adventure Travel Platform
 
 > **Find Your Next Unforgettable Adventure!**
 > 
