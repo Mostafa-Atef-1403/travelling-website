@@ -7,6 +7,7 @@ const Hero = () => {
       className="flex flex-col gap-20 py-10 pb-32
       max-container padding-container md:gap-28 lg:py-20
       xl:flex-row"
+      id="home"
     >
       {/* self closing div for showing the background pattern img */}
       <div className="hero-map" />

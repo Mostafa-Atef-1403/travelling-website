@@ -2,18 +2,37 @@ import Image from "next/image";
 
 const Guide = () => {
   return (
-    <section className="flexCenter flex-col">
+    <section className="flexCenter flex-col" id="guide">
       {/* first part */}
       <div className="padding-container max-container w-full pb-24">
-        <Image src={"/camp.svg"} alt="alt" width={50} height={50} />
-        <p className="uppercase regular-18 mb-3 text-green-50">
+        <Image
+          src={"/camp.svg"}
+          alt="alt"
+          width={50}
+          height={50}
+          data-aos="fade-right"
+          data-aos-duration="600"
+        />
+        <p
+          className="uppercase regular-18 mb-3 text-green-50"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
           We are here for You!
         </p>
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
-          <h2 className="bold-40 lg:bold-64 xl:max-w-[390px]">
+          <h2
+            className="bold-40 lg:bold-64 xl:max-w-[390px]"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             Guide You To Easy Path
           </h2>
-          <p className="regular-16 text-gray-30">
+          <p
+            className="regular-16 text-gray-30"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
             From trailheads to camp spots—we point you in the right direction so
             you spend less time planning and more time exploring. Lorem ipsum
             dolor sit amet consectetur adipisicing elit. Amet error laboriosam
@@ -37,6 +56,8 @@ const Guide = () => {
         <div
           className="absolute flex gap-3 bg-white py-8 pl-5 pr-7 rounded-3xl border
         shadow-lg md:left-[5%] lg:top-20"
+          data-aos="zoom-in"
+          data-aos-duration="400"
         >
           <Image
             src="/meter.svg"

@@ -9,6 +9,7 @@ const Camp = () => {
     <section
       className="2xl:mx-auto 2xl:max-w-[1440px]
       relative flex flex-col px-4 py-10 lg:mb-10 lg:py-20 xl:mb-20"
+      id="camp"
     >
       <div
         className="hide-scrollbar flex justify-start items-start gap-8 overflow-x-auto
@@ -21,15 +22,18 @@ const Camp = () => {
             className={`h-[320px] w-full rounded-4xl md:h-[400px]
             md:w-[500px] lg:h-[500px] lg:w-[700px] shrink-0
             ${camp.bg} bg-cover bg-no-repeat bg-center`}
+            data-aos="fade-up"
+            data-aos-duration={camp.aos}
             key={camp.id}
           >
             {/* Slide content */}
             <div
               className="h-full rounded-4xl p-6 lg:px-20 lg:py-10 flex flex-col justify-between
-            items-start bg-linear-to-b from-green-90/80 to-green-50/40 "
+            items-start bg-linear-to-b from-green-90/80 to-green-50/40
+            hover:from-green-90/85 hover:to-green-50/50 transition cursor-pointer"
             >
               {/* first col u know */}
-              <div className="flexCenter gap-4">
+              <div className="flexCenter gap-4 hover:scale-105 transition">
                 {/* icon */}
                 <div className="rounded-full bg-green-50 p-4">
                   <Image
@@ -47,10 +51,10 @@ const Camp = () => {
               </div>
               {/* second col */}
               <div className="text-white flex items-center gap-2.5">
-                <span className="flex -space-x-4 overflow-hidden">
+                <span className="flex -space-x-4">
                   {PEOPLE_URL.map((p) => (
                     <Image
-                      className="inline-block rounded-full"
+                      className="inline-block rounded-full hover:scale-110 transition"
                       src={p.pfp}
                       alt="I don't know"
                       key={p.id}
@@ -66,28 +70,33 @@ const Camp = () => {
         ))}
       </div>
 
-      {/* banner */}
+      {/* =============== banner strucure =============== */}
       <div className="flexEnd mt-10 px-4 md:px-6">
         <div
           className="bg-green-50 p-6 md:p-8 lg:p-10 w-full
           relative text-white flex items-start sm:max-h-[301px] h-auto md:items-center
-        justify-between gap-6 rounded-2xl"
+          justify-between gap-6 rounded-2xl"
+          data-aos="fade-right"
+          data-aos-duration="700"
         >
-          {/* Left side - Text content */}
           <div className="flex-1 flex flex-col gap-4 md:gap-5 z-10 md:max-w-[60%]">
-            <h2 className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[36px] xl:text-[42px] 2xl:text-[48px] leading-tight">
+            <h2
+              className="text-[20px] sm:text-[24px] md:text-[28px]
+            lg:text-[36px] xl:text-[42px] 2xl:text-[48px] leading-tight"
+              data-aos="zoom-in-up"
+            >
               <strong>Feeling Lost</strong> And Not Knowing The Way?
             </h2>
             <p
               className="text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px]
             text-white/90 w-[90%] md:w-[85%] lg:w-[75%]"
+              data-aos="zoom-in-up"
             >
               Stay at curated nature retreats designed for hikers, campers, and
               outdoor lovers. From sunrise by the lake to sunset above the
               treeline, we match you with camps that are safe, scenic, and ready
               for your next story.
             </p>
-            {/* quote image - under text */}
             <div
               className="absolute bottom-10 right-4
             w-20 h-20
@@ -100,10 +109,11 @@ const Camp = () => {
             </div>
           </div>
 
-          {/* Right side*/}
           <div
             className="hidden sm:block relative z-10
           shrink-0 md:absolute md:right-0 md:bottom-0"
+            data-aos="fade-up"
+            data-aos-duration="900"
           >
             <Image
               src="/phone_banner_1.png"
@@ -111,7 +121,7 @@ const Camp = () => {
               width={300}
               height={400}
               className="w-[200px] h-auto sm:w-[250px] md:w-[300px] lg:w-[400px] xl:w-[500px]
-              2xl:w-[620px] object-contain translate-y-4 md:translate-y-14 lg:translate-y-12"
+              object-contain translate-y-4 md:translate-y-14 lg:translate-y-12"
               quality={100}
               unoptimized={true}
             />

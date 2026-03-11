@@ -5,10 +5,18 @@ import { FEATURES } from "@/constants/constants";
 
 function Features() {
   return (
-    <section className="flexCenter flex-col bg-feature-bg bg-center bg-no-repeat overflow-hidden py-24">
+    <section
+      className="flexCenter flex-col bg-feature-bg
+    bg-center bg-no-repeat overflow-hidden py-24"
+      id="features"
+    >
       <div className="max-container padding-container w-full flex justify-end relative">
         {/* Phone img pop up */}
-        <div className="flex flex-1 lg:min-h-[900px]">
+        <div
+          className="flex flex-1 lg:min-h-[900px]"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <Image
             src="/phone.png"
             alt="phone"
@@ -16,6 +24,7 @@ function Features() {
             height={1000}
             className="feature-phone"
             unoptimized={true}
+            data-aos="flip-left"
           />
         </div>
 
@@ -32,11 +41,11 @@ function Features() {
               <li
                 key={card.title}
                 className="flex flex-1 flex-col items-start w-full my-2.5"
+                data-aos="fade-left"
+                data-aos-duration={card.aos}
               >
                 {/* feature icon */}
-                <div
-                  className={`bg-${card.variant}-50 rounded-full p-4 lg:p-7`}
-                >
+                <div className={`bg-green-50 rounded-full p-4 lg:p-7`}>
                   <Image src={card.icon} alt="icon" width={28} height={28} />
                 </div>
 
